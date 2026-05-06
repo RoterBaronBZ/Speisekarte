@@ -1,0 +1,36 @@
+{
+    "de": {
+      "title": "Speisekarte",
+      "categories": [
+        {
+          "name": "Vorspeisen",
+          "items": [
+            { "name": "Tomatensuppe", "price": 5 }
+          ]
+        },
+        {
+          "name": "Hauptgerichte",
+          "items": [
+            { "name": "Pizza Margherita", "price": 9 }
+          ]
+        }
+      ]
+    },
+    "en": {
+      "title": "Menu",
+      "categories": [
+        {
+          "name": "Starters",
+          "items": [
+            { "name": "Tomato Soup", "price": 5 }
+          ]
+        },
+        {
+          "name": "Main Dishes",
+          "items": [
+            { "name": "Pizza Margherita", "price": 9 }
+          ]
+        }
+      ]
+    }
+  }

@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    background: #ffffff;
+    color: #222;
+  }
+  
+  /* Topbar (Sprachwahl) */
+  .topbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /* Titel */
+  h1 {
+    text-align: center;
+    font-size: 22px;
+    margin: 15px 0;
+  }
+  
+  /* Kategorien */
+  .category {
+    margin-top: 20px;
+  }
+  
+  .category h2 {
+    font-size: 18px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+  }
+  
+  /* Menüeinträge */
+  .item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+  }
+  
+  /* Preis hervorheben */
+  .item span:last-child {
+    font-weight: bold;
+  }
+  
+  /* 📱 Extra Optimierung für kleine Displays */
+  @media (max-width: 480px) {
+    body {
+      margin: 8px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    .item {
+      font-size: 15px;
+    }
+  
+    button {
+      font-size: 13px;
+      padding: 6px 10px;
+    }
+  }
