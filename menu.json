@@ -1,220 +1,361 @@
 {
-    "de": {
-      "title": "Speisekarte",
-      "categories": [
-        {
-          "name": "Vorspeisen",
-          "items": [
-            { "name": "Eierflockensuppe", "description": "", "price": 4.7 },
-            { "name": "Soljanka mit Toast", "description": "", "price": 5.1 },
-            { "name": "Geflügelwürzfleisch mit Toast", "description": "", "price": 6.6 },
-            { "name": "Kleiner Rohkostteller", "description": "", "price": 6.1 },
-            { "name": "Gebackener Camembert mit Preiselbeeren und Toast", "description": "", "price": 8.2 }
-          ]
-        },
-        {
-          "name": "Hauptspeisen - Rind",
-          "items": [
-            {
-              "name": "Rinderzunge",
-              "description": "mit Kartoffeln und Gemüse",
-              "price": 19.2
-            },
-            {
-              "name": "Hausgemachte Rinderroulade",
-              "description": "mit Kartoffeln und Rotkraut",
-              "price": 20.4
-            }
-          ]
-        },
-        {
-          "name": "Hauptspeisen - Wild",
-          "items": [
-            {
-              "name": "Hirschbraten",
-              "description": "mit Klößen und Rotkraut",
-              "price": 21.3
-            }
-          ]
-        },
-        {
-          "name": "Hauptspeisen - Geflügel",
-          "items": [
-            {
-              "name": "Hähnchenschnitzel",
-              "description": "mit Pommes, Rohkost und Gemüse",
-              "price": 16.8
-            },
-            {
-              "name": "Überbackenes Hähnchenfilet",
-              "description": "mit Ananas, Pommes und Rohkost",
-              "price": 16.7
-            },
-            {
-              "name": "Gebratenes Hähnchenfilet",
-              "description": "mit Curry-Sahnesauce, Wildreis und Rohkost",
-              "price": 17.6
-            },
-            {
-              "name": "Überbackenes Hähnchenfilet",
-              "description": "mit Tomate, Kartoffelecken und Rohkost",
-              "price": 17.7
-            }
-          ]
-        },
-        {
-          "name": "Hauptspeisen - Schwein",
-          "items": [
-            {
-              "name": "Schweinekammsteak au four",
-              "description": "mit Pommes und Rohkost",
-              "price": 28
-            },
-            {
-              "name": "Schweinekammsteak Spreewälder Art",
-              "description": "mit Röster und Rohkost",
-              "price": 28
-            },
-            {
-              "name": "Schweineschnitzel (Kamm oder Rücken)",
-              "description": "mit Kartoffeln und Gemüse",
-              "price": 16.9
-            },
-            {
-              "name": "Schweinekammsteak Zigeunerart",
-              "description": "mit Pommes und Rohkost",
-              "price": 28
-            },
-            {
-              "name": "Schweinekammsteak mit Rahmchampignons",
-              "description": "mit Kroketten und Rohkost",
-              "price": 28
-            },
-            {
-              "name": "Kasslerbraten",
-              "description": "mit Klößen und Sauerkraut",
-              "price": 16.9
-            }
-          ]
-        },
-        {
-          "name": "Hauptspeisen - Fisch",
-          "items": [
-            {
-              "name": "Gebratenes Zanderfilet",
-              "description": "mit Kräuterbutter, Kartoffeln und Gemüse",
-              "price": 20.9
-            },
-            {
-              "name": "Brathering",
-              "description": "mit Röstkartoffeln und Rohkost",
-              "price": 14.9
-            }
-          ]
-        },
-        {
-          "name": "Sonstiges",
-          "items": [
-            {
-              "name": "Feuerfleisch",
-              "description": "mit Röstkartoffeln und Rohkost",
-              "price": 16.9
-            },
-            { "name": "Bauernfrühstück", "description": "", "price": 14.9 },
-            { "name": "Omelett mit Geflügelwürzfleisch", "description": "", "price": 14.2 },
-            { "name": "Omelett mit Rahmchampignons", "description": "", "price": 13.9 },
-            { "name": "Kleines kaltes Bratenbrot", "description": "mit Meerrettich", "price": 8.9 },
-            { "name": "Grillhaxe", "description": "mit Sauerkraut und Brot", "price": 17.9 },
-            { "name": "Gemüseplatte", "description": "mit Butter und Kartoffeln", "price": 12.9 }
-          ]
-        },
-        {
-          "name": "Für unsere Kleinen",
-          "items": [
-            { "name": "Nudeln", "description": "mit Tomatensauce", "price": 4.9 },
-            { "name": "Pommes rot-weiß", "description": "", "price": 3.2 },
-            { "name": "Hähnchenschnitzel", "description": "mit Pommes und Gemüse", "price": 6.2 },
-            { "name": "Fischstäbchen", "description": "mit Kartoffeln und Rotkraut", "price": 4.9 },
-            { "name": "Kartoffelpuffer", "description": "mit Apfelmus", "price": 4.8 },
-            { "name": "Hefeklöße", "description": "mit Apfelmus", "price": 4.8 }
-          ]
-        },
-        {
-          "name": "Eiskarte",
-          "items": [
-            { "name": "Vanilleeis", "description": "mit heißen Himbeeren und Sahne", "price": 7.8 },
-            { "name": "Schokobecher", "description": "mit Eierlikör und Sahne", "price": 7.6 },
-            { "name": "Vanilleeis", "description": "mit Apfelmus und Sahne", "price": 7.3 },
-            { "name": "Kinder-Eisbecher", "description": "eine Kugel Eis mit Sahne", "price": 3.2 }
-          ]
-        },
-        {
-          "name": "Alkoholfreie Getränke",
-          "items": [
-            { "name": "Orangensaft", "description": "0,2l", "price": 2.6 },
-            { "name": "Apfelsaft", "description": "0,2l", "price": 2.6 },
-            { "name": "Multivitaminsaft", "description": "0,2l", "price": 2.6 },
-            { "name": "Kirschsaft", "description": "0,2l", "price": 2.6 }
-          ]
-        },
-        {
-          "name": "Sekt",
-          "items": [
-            { "name": "Lausitzer Zeitgeist halbtrocken", "description": "0,75l", "price": 16.8 },
-            { "name": "Lausitzer Zeitgeist trocken", "description": "0,75l", "price": 16.8 }
-          ]
-        },
-        {
-          "name": "Weißweine",
-          "items": [
-            { "name": "Weißer Burgunder trocken", "description": "0,2l", "price": 6.2 }
-          ]
-        },
-        {
-          "name": "Rotweine",
-          "items": []
-        },
-        {
-          "name": "Bier vom Fass",
-          "items": [
-            { "name": "Feldschlösschen Pilsner", "description": "0,25l", "price": 3 }
-          ]
-        },
-        {
-          "name": "Flaschenbiere",
-          "items": [
-            { "name": "Radeberger Pils", "description": "0,5l", "price": 4.5 }
-          ]
-        },
-        {
-          "name": "Spirituosen (4cl)",
-          "items": [
-            { "name": "Jägermeister", "description": "", "price": 2.8 }
-          ]
-        },
-        {
-          "name": "Heißgetränke",
-          "items": [
-            { "name": "Espresso", "description": "", "price": 2.4 }
-          ]
-        }
-      ]
-    },
-    "en": {
-      "title": "Menu",
-      "categories": [
-        {
-          "name": "Starters",
-          "items": [
-            { "name": "Tomato Soup", "price": 5 }
-          ]
-        },
-        {
-          "name": "Main Dishes",
-          "items": [
-            { "name": "Pizza Margherita", "price": 9 }
-          ]
-        }
-      ]
-    }
+  "de": {
+    "title": "Speisekarte",
+    "categories": [
+      {
+        "name": "Vorspeisen",
+        "subcategories": [
+          {
+            "name": "Suppen & Kleinigkeiten",
+            "items": [
+              { "name": "Eierflockensuppe", "description": "", "price": 4.7 },
+              { "name": "Soljanka mit Toast", "description": "", "price": 5.1 },
+              { "name": "Geflügelwürzfleisch mit Toast", "description": "", "price": 6.6 },
+              { "name": "Kleiner Rohkostteller", "description": "", "price": 6.1 },
+              { "name": "Gebackener Camembert mit Preiselbeeren und Toast", "description": "", "price": 8.2 }
+            ]
+          }
+        ]
+      },
+
+      {
+        "name": "Hauptspeisen",
+        "subcategories": [
+          {
+            "name": "Vom Rind",
+            "items": [
+              {
+                "name": "Rinderzunge",
+                "description": "mit Kartoffeln und Gemüse",
+                "price": 19.2
+              },
+              {
+                "name": "Hausgemachte Rinderroulade",
+                "description": "mit Kartoffeln und Rotkraut",
+                "price": 20.4
+              }
+            ]
+          },
+
+          {
+            "name": "Vom Wild",
+            "items": [
+              {
+                "name": "Hirschbraten",
+                "description": "mit Klößen und Rotkraut",
+                "price": 21.3
+              }
+            ]
+          },
+
+          {
+            "name": "Vom Geflügel",
+            "items": [
+              {
+                "name": "Hähnchenschnitzel",
+                "description": "mit Pommes, Rohkost und Gemüse",
+                "price": 16.8
+              },
+              {
+                "name": "Überbackenes Hähnchenfilet",
+                "description": "mit Ananas, Pommes und Rohkost",
+                "price": 16.7
+              },
+              {
+                "name": "Gebratenes Hähnchenfilet",
+                "description": "mit Curry-Sahnesauce, Wildreis und Rohkost",
+                "price": 17.6
+              },
+              {
+                "name": "Überbackenes Hähnchenfilet",
+                "description": "mit Tomate, Kartoffelecken und Rohkost",
+                "price": 17.7
+              }
+            ]
+          },
+
+          {
+            "name": "Vom Schwein",
+            "items": [
+              {
+                "name": "Schweinekammsteak au four",
+                "description": "mit Pommes und Rohkost",
+                "price": 28
+              },
+              {
+                "name": "Schweinekammsteak Spreewälder Art",
+                "description": "mit Röster und Rohkost",
+                "price": 28
+              },
+              {
+                "name": "Schweineschnitzel (Kamm oder Rücken)",
+                "description": "mit Kartoffeln und Gemüse",
+                "price": 16.9
+              },
+              {
+                "name": "Schweinekammsteak Zigeunerart",
+                "description": "mit Pommes und Rohkost",
+                "price": 28
+              },
+              {
+                "name": "Schweinekammsteak mit Rahmchampignons",
+                "description": "mit Kroketten und Rohkost",
+                "price": 28
+              },
+              {
+                "name": "Kasslerbraten",
+                "description": "mit Klößen und Sauerkraut",
+                "price": 16.9
+              }
+            ]
+          },
+
+          {
+            "name": "Fischgerichte",
+            "items": [
+              {
+                "name": "Gebratenes Zanderfilet",
+                "description": "mit Kräuterbutter, Kartoffeln und Gemüse",
+                "price": 20.9
+              },
+              {
+                "name": "Brathering",
+                "description": "mit Röstkartoffeln und Rohkost",
+                "price": 14.9
+              }
+            ]
+          },
+
+          {
+            "name": "Sonstige Gerichte",
+            "items": [
+              {
+                "name": "Feuerfleisch",
+                "description": "mit Röstkartoffeln und Rohkost",
+                "price": 16.9
+              },
+              {
+                "name": "Bauernfrühstück",
+                "description": "",
+                "price": 14.9
+              },
+              {
+                "name": "Omelett mit Geflügelwürzfleisch",
+                "description": "",
+                "price": 14.2
+              },
+              {
+                "name": "Omelett mit Rahmchampignons",
+                "description": "",
+                "price": 13.9
+              },
+              {
+                "name": "Kleines kaltes Bratenbrot",
+                "description": "mit Meerrettich",
+                "price": 8.9
+              },
+              {
+                "name": "Grillhaxe",
+                "description": "mit Sauerkraut und Brot",
+                "price": 17.9
+              },
+              {
+                "name": "Gemüseplatte",
+                "description": "mit Butter und Kartoffeln",
+                "price": 12.9
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "name": "Für unsere Kleinen",
+        "subcategories": [
+          {
+            "name": "Kindergerichte",
+            "items": [
+              {
+                "name": "Nudeln",
+                "description": "mit Tomatensauce",
+                "price": 4.9
+              },
+              {
+                "name": "Pommes rot-weiß",
+                "description": "",
+                "price": 3.2
+              },
+              {
+                "name": "Hähnchenschnitzel",
+                "description": "mit Pommes und Gemüse",
+                "price": 6.2
+              },
+              {
+                "name": "Fischstäbchen",
+                "description": "mit Kartoffeln und Rotkraut",
+                "price": 4.9
+              },
+              {
+                "name": "Kartoffelpuffer",
+                "description": "mit Apfelmus",
+                "price": 4.8
+              },
+              {
+                "name": "Hefeklöße",
+                "description": "mit Apfelmus",
+                "price": 4.8
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "name": "Desserts",
+        "subcategories": [
+          {
+            "name": "Eisspezialitäten",
+            "items": [
+              {
+                "name": "Vanilleeis",
+                "description": "mit heißen Himbeeren und Sahne",
+                "price": 7.8
+              },
+              {
+                "name": "Schokobecher",
+                "description": "mit Eierlikör und Sahne",
+                "price": 7.6
+              },
+              {
+                "name": "Vanilleeis",
+                "description": "mit Apfelmus und Sahne",
+                "price": 7.3
+              },
+              {
+                "name": "Kinder-Eisbecher",
+                "description": "eine Kugel Eis mit Sahne",
+                "price": 3.2
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "name": "Getränke",
+        "subcategories": [
+          {
+            "name": "Alkoholfreie Getränke",
+            "items": [
+              { "name": "Orangensaft", "description": "0,2l", "price": 2.6 },
+              { "name": "Apfelsaft", "description": "0,2l", "price": 2.6 },
+              { "name": "Multivitaminsaft", "description": "0,2l", "price": 2.6 },
+              { "name": "Kirschsaft", "description": "0,2l", "price": 2.6 }
+            ]
+          },
+
+          {
+            "name": "Sekt",
+            "items": [
+              {
+                "name": "Lausitzer Zeitgeist halbtrocken",
+                "description": "0,75l",
+                "price": 16.8
+              },
+              {
+                "name": "Lausitzer Zeitgeist trocken",
+                "description": "0,75l",
+                "price": 16.8
+              }
+            ]
+          },
+
+          {
+            "name": "Weißweine",
+            "items": [
+              {
+                "name": "Weißer Burgunder trocken",
+                "description": "0,2l",
+                "price": 6.2
+              }
+            ]
+          },
+
+          {
+            "name": "Rotweine",
+            "items": []
+          },
+
+          {
+            "name": "Bier vom Fass",
+            "items": [
+              {
+                "name": "Feldschlösschen Pilsner",
+                "description": "0,25l",
+                "price": 3
+              }
+            ]
+          },
+
+          {
+            "name": "Flaschenbiere",
+            "items": [
+              {
+                "name": "Radeberger Pils",
+                "description": "0,5l",
+                "price": 4.5
+              }
+            ]
+          },
+
+          {
+            "name": "Spirituosen (4cl)",
+            "items": [
+              {
+                "name": "Jägermeister",
+                "description": "",
+                "price": 2.8
+              }
+            ]
+          },
+
+          {
+            "name": "Heißgetränke",
+            "items": [
+              {
+                "name": "Espresso",
+                "description": "",
+                "price": 2.4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "en": {
+    "title": "Menu",
+    "categories": [
+      {
+        "name": "Starters",
+        "items": [
+          {
+            "name": "Tomato Soup",
+            "price": 5
+          }
+        ]
+      },
+
+      {
+        "name": "Main Dishes",
+        "items": [
+          {
+            "name": "Pizza Margherita",
+            "price": 9
+          }
+        ]
+      }
+    ]
   }
+}

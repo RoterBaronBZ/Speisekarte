@@ -1,129 +1,191 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #f5f5f5;
-    color: #222;
-  
-    /* Zentrierung der ganzen Seite */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 16px;
+  background: #f5f5f5;
+  color: #222;
+
+  /* Zentrierung der ganzen Seite */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+.header {
+  background: #0b5d2a;
+  color: #d4af37;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 28px;
+  font-weight: bold;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Sprachleiste */
+.topbar {
+  display: flex;
+  justify-content: center;
+  background: #1f7a3d;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  background: #d4af37;
+  border: none;
+  margin: 3px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 750px;
+  background: white;
+  margin: 20px 0;
+  padding: 24px 18px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  box-sizing: border-box;
+}
+
+/* Hauptkategorien */
+.category {
+  margin-top: 40px;
+  padding: 10px 0;
+
+  opacity: 0;
+  transform: translateY(20px);
+
+  text-align: center;
+}
+
+.category:first-child {
+  margin-top: 0;
+}
+
+/* Haupttitel */
+.category-title {
+  font-size: 34px;
+  color: #0b5d2a;
+  margin-bottom: 20px;
+  font-weight: bold;
+  border-bottom: 3px solid #d4af37;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+/* Unterkategorien */
+.subcategory-title {
+  margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 24px;
+  color: #1f7a3d;
+  font-weight: 600;
+}
+
+/* Items */
+.item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  align-items: flex-start;
+
+  text-align: left;
+}
+
+/* Linke Seite */
+.item-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Gerichtname */
+.item-name {
+  font-size: 18px;
+  font-weight: 600;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* Beschreibung */
+.item-desc {
+  font-size: 13px;
+  color: #666;
+  margin-top: 4px;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* Preis */
+.item-price {
+  font-weight: bold;
+  color: #0b5d2a;
+  white-space: nowrap;
+  font-size: 17px;
+  margin-left: 10px;
+}
+
+/* Mobile Optimierung */
+@media (max-width: 480px) {
+
+  body {
+    padding: 10px;
   }
-  
-  /* Header */
+
   .header {
-    background: #0b5d2a;
-    color: #d4af37;
-    text-align: center;
-    padding: 20px 10px;
     font-size: 22px;
-    font-weight: bold;
-    width: 100%;
+    padding: 18px 10px;
   }
-  
-  /* Sprachleiste */
-  .topbar {
-    display: flex;
-    justify-content: center; /* geändert von flex-end */
-    background: #1f7a3d;
-    padding: 5px;
-    width: 100%;
-  }
-  
-  button {
-    background: #d4af37;
-    border: none;
-    margin: 3px;
-    padding: 6px 10px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  /* Container (zentraler Block) */
+
   .container {
     width: 100%;
-    max-width: 750px;
-    background: white;
-    margin: 20px;
-    padding: 20px;
+    max-width: 100%;
+    padding: 18px 14px;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   }
-  
-  /* Kategorien */
-  .category {
-    margin-top: 25px;
-    padding: 10px 0;
-  
-    opacity: 0;
-    transform: translateY(20px);
+
+  .category-title {
+    font-size: 28px;
   }
-  
-  .category h2 {
-    text-align: center;
-    font-size: 18px;
-    color: #1f7a3d;
-    border-bottom: 2px solid #d4af37;
-    display: inline-block;
-    padding-bottom: 4px;
+
+  .subcategory-title {
+    font-size: 20px;
   }
-  
-  /* Items */
+
   .item {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 8px 0;
-    border-bottom: 1px solid #eee;
-    align-items: flex-start;
+    gap: 8px;
+    padding: 10px 0;
   }
-  
-  .item-left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Name darf umbrechen */
+
   .item-name {
-    font-weight: 500;
-    word-break: break-word;
-    overflow-wrap: anywhere;
+    font-size: 16px;
   }
-  
-  /* Beschreibung kleiner darunter */
+
   .item-desc {
     font-size: 12px;
-    color: #666;
-    margin-top: 2px;
-    word-break: break-word;
-    overflow-wrap: anywhere;
   }
-  
-  /* Preis bleibt rechts sauber */
-  .item-price {
-    font-weight: bold;
-    color: #0b5d2a;
-    white-space: nowrap;
-  }
-  
-  /* Preis rechts, bleibt schön sauber */
-  .item span:last-child {
-    font-weight: bold;
-    color: #0b5d2a;
-  }
-  
-  /* Mobile */
-  @media (max-width: 480px) {
-    .header {
-      font-size: 20px;
-    }
-  
-    .container {
-      max-width: 100%;
-    }
 
-    /* 🌙 DARK MODE - GLOBAL (NICHT in media query!) */
+  .item-price {
+    font-size: 15px;
+  }
+}
+
+/* 🌙 DARK MODE */
 body.dark {
   background: #121212;
   color: #e5e5e5;
@@ -133,8 +195,13 @@ body.dark .container {
   background: #1a1a1a;
 }
 
-body.dark .category {
-  background: #1e1e1e;
+body.dark .category-title {
+  color: #d4af37;
+  border-bottom: 3px solid #1f7a3d;
+}
+
+body.dark .subcategory-title {
+  color: #8bcf9f;
 }
 
 body.dark .item {
@@ -145,12 +212,19 @@ body.dark .item-desc {
   color: #aaa;
 }
 
+body.dark .item-price {
+  color: #d4af37;
+}
+
 body.dark .header {
   background: #0a3d1c;
+}
+
+body.dark .topbar {
+  background: #14592d;
 }
 
 body.dark button {
   background: #333;
   color: white;
 }
-  }

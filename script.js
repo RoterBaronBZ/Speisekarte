@@ -2,7 +2,7 @@ let menuData = {};
 let currentLang = 'de';
 let darkMode = false;
 
-fetch('menu.json')
+fetch('./menu.json')
   .then(res => res.json())
   .then(data => {
     menuData = data;
@@ -27,14 +27,18 @@ function toggleDarkMode() {
 
 /* ✨ Animation Helper */
 function animateIn(element, delay = 0) {
-    setTimeout(() => {
-      element.style.transition = "all 0.4s ease";
-      element.style.opacity = 1;
-      element.style.transform = "translateY(0)";
-    }, delay);
-  }
+  element.style.opacity = 0;
+  element.style.transform = "translateY(20px)";
+
+  setTimeout(() => {
+    element.style.transition = "all 0.4s ease";
+    element.style.opacity = 1;
+    element.style.transform = "translateY(0)";
+  }, delay);
+}
 
 function renderMenu() {
+
   const data = menuData[currentLang];
 
   document.getElementById('title').innerText = data.title;
@@ -43,34 +47,74 @@ function renderMenu() {
   menuDiv.innerHTML = "";
 
   data.categories.forEach((cat, index) => {
+
+    /* 🔥 Hauptkategorie */
     const catDiv = document.createElement('div');
     catDiv.className = "category";
 
-    const catTitle = document.createElement('h2');
+    const catTitle = document.createElement('h1');
+    catTitle.className = "category-title";
     catTitle.innerText = cat.name;
+
     catDiv.appendChild(catTitle);
 
-    cat.items.forEach(item => {
-      const itemDiv = document.createElement('div');
-      itemDiv.className = "item";
+    /* 🔥 Unterkategorien */
+    if (cat.subcategories) {
 
-      itemDiv.innerHTML = `
-        <div class="item-left">
-          <div class="item-name">${item.name}</div>
-          <div class="item-desc">${item.description || ""}</div>
-        </div>
-        <div class="item-price">${formatPrice(item.price)}</div>
-      `;
+      cat.subcategories.forEach(subcat => {
 
-      catDiv.appendChild(itemDiv);
-    });
+        const subTitle = document.createElement('h2');
+        subTitle.className = "subcategory-title";
+        subTitle.innerText = subcat.name;
+
+        catDiv.appendChild(subTitle);
+
+        subcat.items.forEach(item => {
+
+          const itemDiv = document.createElement('div');
+          itemDiv.className = "item";
+
+          itemDiv.innerHTML = `
+            <div class="item-left">
+              <div class="item-name">${item.name}</div>
+              <div class="item-desc">${item.description || ""}</div>
+            </div>
+
+            <div class="item-price">
+              ${formatPrice(item.price)}
+            </div>
+          `;
+
+          catDiv.appendChild(itemDiv);
+        });
+      });
+
+    } else {
+
+      /* 🔥 Falls keine Unterkategorien vorhanden */
+      cat.items.forEach(item => {
+
+        const itemDiv = document.createElement('div');
+        itemDiv.className = "item";
+
+        itemDiv.innerHTML = `
+          <div class="item-left">
+            <div class="item-name">${item.name}</div>
+            <div class="item-desc">${item.description || ""}</div>
+          </div>
+
+          <div class="item-price">
+            ${formatPrice(item.price)}
+          </div>
+        `;
+
+        catDiv.appendChild(itemDiv);
+      });
+    }
 
     menuDiv.appendChild(catDiv);
 
-// Animation starten mit Verzögerung (schönes nacheinander Einblenden)
-animateIn(catDiv, index * 120);
-
-    /* ✨ Animation pro Kategorie */
-    animateIn(catDiv);
+    /* ✨ Animation */
+    animateIn(catDiv, index * 120);
   });
 }
