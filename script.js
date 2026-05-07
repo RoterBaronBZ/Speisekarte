@@ -19,24 +19,26 @@ function formatPrice(price) {
   return price.toFixed(2).replace(".", ",") + " €";
 }
 
-/* 🌙 Dark Mode Toggle */
+/* 🌙 Dark Mode */
 function toggleDarkMode() {
   darkMode = !darkMode;
   document.body.classList.toggle("dark", darkMode);
 }
 
-/* ✨ Animation Helper */
+/* ✨ Animation */
 function animateIn(element, delay = 0) {
+
   element.style.opacity = 0;
   element.style.transform = "translateY(20px)";
 
   setTimeout(() => {
-    element.style.transition = "all 0.4s ease";
+    element.style.transition = "all 0.5s ease";
     element.style.opacity = 1;
     element.style.transform = "translateY(0)";
   }, delay);
 }
 
+/* 📋 Menü rendern */
 function renderMenu() {
 
   const data = menuData[currentLang];
@@ -44,13 +46,45 @@ function renderMenu() {
   document.getElementById('title').innerText = data.title;
 
   const menuDiv = document.getElementById('menu');
+
   menuDiv.innerHTML = "";
 
   data.categories.forEach((cat, index) => {
 
-    /* 🔥 Hauptkategorie */
     const catDiv = document.createElement('div');
     catDiv.className = "category";
+
+    /* IDs für Sticky Navigation */
+
+    const categoryName = cat.name.toLowerCase();
+
+    if (categoryName.includes("vorspeisen")) {
+      catDiv.id = "vorspeisen";
+    }
+
+    if (categoryName.includes("hauptspeisen")) {
+      catDiv.id = "hauptspeisen";
+    }
+
+    if (categoryName.includes("desserts")) {
+      catDiv.id = "desserts";
+    }
+
+    if (
+      categoryName.includes("getränke") ||
+      categoryName.includes("getraenke")
+    ) {
+      catDiv.id = "getraenke";
+    }
+
+    if (
+      categoryName.includes("spirituosen") ||
+      categoryName.includes("schnaps")
+    ) {
+      catDiv.id = "spirituosen";
+    }
+
+    /* Hauptkategorie */
 
     const catTitle = document.createElement('h1');
     catTitle.className = "category-title";
@@ -58,14 +92,23 @@ function renderMenu() {
 
     catDiv.appendChild(catTitle);
 
-    /* 🔥 Unterkategorien */
+    /* Unterkategorien */
+
     if (cat.subcategories) {
 
       cat.subcategories.forEach(subcat => {
 
         const subTitle = document.createElement('h2');
-        subTitle.className = "subcategory-title";
-        subTitle.innerText = subcat.name;
+subTitle.className = "subcategory-title";
+subTitle.innerText = subcat.name;
+
+/* IDs für Unterkategorien */
+
+const subName = subcat.name.toLowerCase();
+
+if (subName.includes("spirituosen")) {
+  subTitle.id = "spirituosen";
+}
 
         catDiv.appendChild(subTitle);
 
@@ -91,7 +134,6 @@ function renderMenu() {
 
     } else {
 
-      /* 🔥 Falls keine Unterkategorien vorhanden */
       cat.items.forEach(item => {
 
         const itemDiv = document.createElement('div');
@@ -114,7 +156,29 @@ function renderMenu() {
 
     menuDiv.appendChild(catDiv);
 
-    /* ✨ Animation */
     animateIn(catDiv, index * 120);
   });
 }
+
+/* =========================================
+   BACK TO TOP BUTTON
+========================================= */
+
+const backToTopBtn = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+
+  if (window.scrollY > 300) {
+    backToTopBtn.classList.add("show");
+  } else {
+    backToTopBtn.classList.remove("show");
+  }
+});
+
+backToTopBtn.addEventListener("click", () => {
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});

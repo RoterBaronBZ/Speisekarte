@@ -1,46 +1,103 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
+
   margin: 0;
   padding: 16px;
+
   background: #f5f5f5;
   color: #222;
 
-  /* Zentrierung der ganzen Seite */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Header */
-.header {
-  background: #0b5d2a;
-  color: #d4af37;
-  text-align: center;
-  padding: 20px 10px;
-  font-size: 28px;
-  font-weight: bold;
+/* HERO SECTION */
+
+.hero {
   width: 100%;
-  box-sizing: border-box;
+  max-width: 1100px;
+  height: 320px;
+
+  background-image: url('./images/hero.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 18px;
+  overflow: hidden;
+
+  position: relative;
+
+  margin-top: 10px;
+
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
 }
 
-/* Sprachleiste */
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0,0,0,0.45);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+}
+
+.hero-overlay h1 {
+  font-size: 42px;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.hero-overlay p {
+  margin-top: 10px;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* TOPBAR */
+
 .topbar {
   display: flex;
   justify-content: center;
+
   background: #1f7a3d;
+
   padding: 8px;
   width: 100%;
+
   box-sizing: border-box;
+
+  border-radius: 12px;
+
+  max-width: 1100px;
 }
+
+/* BUTTONS */
 
 button {
   background: #d4af37;
   border: none;
+
   margin: 3px;
   padding: 8px 14px;
+
   cursor: pointer;
   font-weight: bold;
+
   border-radius: 6px;
+
   transition: 0.2s ease;
 }
 
@@ -48,19 +105,93 @@ button:hover {
   transform: scale(1.03);
 }
 
-/* Container */
+/* STICKY NAV */
+
+.sticky-nav {
+  position: sticky;
+  top: 10px;
+  z-index: 999;
+
+  width: 100%;
+  max-width: 900px;
+
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  padding: 14px 10px;
+  margin-top: 15px;
+
+  background: rgba(255,255,255,0.92);
+
+  backdrop-filter: blur(10px);
+
+  border-radius: 14px;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.sticky-nav a {
+  text-decoration: none;
+
+  color: #0b5d2a;
+
+  background: #f3f3f3;
+
+  padding: 10px 16px;
+
+  border-radius: 999px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: 0.2s ease;
+}
+
+.sticky-nav a:hover {
+  background: #d4af37;
+  color: white;
+
+  transform: translateY(-2px);
+}
+
+/* HEADER */
+
+.header {
+  color: #0b5d2a;
+
+  text-align: center;
+
+  padding: 20px 10px;
+
+  font-size: 34px;
+  font-weight: bold;
+
+  width: 100%;
+}
+
+/* CONTAINER */
+
 .container {
   width: 100%;
   max-width: 750px;
+
   background: white;
+
   margin: 20px 0;
+
   padding: 24px 18px;
+
   border-radius: 16px;
+
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
   box-sizing: border-box;
 }
 
-/* Hauptkategorien */
+/* KATEGORIEN */
+
 .category {
   margin-top: 40px;
   padding: 10px 0;
@@ -75,87 +206,163 @@ button:hover {
   margin-top: 0;
 }
 
-/* Haupttitel */
 .category-title {
   font-size: 34px;
   color: #0b5d2a;
+
   margin-bottom: 20px;
+
   font-weight: bold;
+
   border-bottom: 3px solid #d4af37;
+
   display: inline-block;
+
   padding-bottom: 8px;
 }
 
-/* Unterkategorien */
+/* UNTERKATEGORIEN */
+
 .subcategory-title {
   margin-top: 28px;
   margin-bottom: 12px;
+
   font-size: 24px;
+
   color: #1f7a3d;
+
   font-weight: 600;
 }
 
-/* Items */
+/* ITEMS */
+
 .item {
   display: flex;
   justify-content: space-between;
+
   gap: 12px;
+
   padding: 12px 0;
+
   border-bottom: 1px solid #eee;
+
   align-items: flex-start;
 
   text-align: left;
 }
 
-/* Linke Seite */
 .item-left {
   flex: 1;
+
   display: flex;
   flex-direction: column;
 }
 
-/* Gerichtname */
 .item-name {
   font-size: 18px;
   font-weight: 600;
+
   word-break: break-word;
   overflow-wrap: anywhere;
 }
 
-/* Beschreibung */
 .item-desc {
   font-size: 13px;
+
   color: #666;
+
   margin-top: 4px;
+
   word-break: break-word;
   overflow-wrap: anywhere;
 }
 
-/* Preis */
+/* PREIS */
+
 .item-price {
   font-weight: bold;
-  color: #0b5d2a;
+
+  color: #d4af37;
+
   white-space: nowrap;
+
   font-size: 17px;
+
   margin-left: 10px;
 }
 
-/* Mobile Optimierung */
+/* BACK TO TOP */
+
+#backToTop {
+  position: fixed;
+
+  bottom: 25px;
+  right: 25px;
+
+  width: 52px;
+  height: 52px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: #0b5d2a;
+  color: white;
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: 0.3s ease;
+
+  z-index: 999;
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#backToTop:hover {
+  transform: translateY(-3px);
+
+  background: #d4af37;
+}
+
+/* MOBILE */
+
 @media (max-width: 480px) {
 
   body {
     padding: 10px;
   }
 
+  .hero {
+    height: 240px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 28px;
+  }
+
+  .hero-overlay p {
+    font-size: 15px;
+  }
+
   .header {
     font-size: 22px;
-    padding: 18px 10px;
   }
 
   .container {
     width: 100%;
     max-width: 100%;
+
     padding: 18px 14px;
+
     border-radius: 12px;
   }
 
@@ -165,11 +372,6 @@ button:hover {
 
   .subcategory-title {
     font-size: 20px;
-  }
-
-  .item {
-    gap: 8px;
-    padding: 10px 0;
   }
 
   .item-name {
@@ -183,9 +385,21 @@ button:hover {
   .item-price {
     font-size: 15px;
   }
+
+  .sticky-nav {
+    top: 5px;
+    padding: 10px;
+    gap: 6px;
+  }
+
+  .sticky-nav a {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
 }
 
-/* 🌙 DARK MODE */
+/* DARK MODE */
+
 body.dark {
   background: #121212;
   color: #e5e5e5;
@@ -212,19 +426,25 @@ body.dark .item-desc {
   color: #aaa;
 }
 
-body.dark .item-price {
+body.dark .header {
   color: #d4af37;
 }
 
-body.dark .header {
-  background: #0a3d1c;
+body.dark .sticky-nav {
+  background: rgba(20,20,20,0.92);
 }
 
-body.dark .topbar {
-  background: #14592d;
+body.dark .sticky-nav a {
+  background: #2a2a2a;
+  color: #f5f5f5;
 }
 
-body.dark button {
-  background: #333;
-  color: white;
+body.dark .sticky-nav a:hover {
+  background: #d4af37;
+  color: black;
+}
+
+body.dark #backToTop {
+  background: #d4af37;
+  color: black;
 }

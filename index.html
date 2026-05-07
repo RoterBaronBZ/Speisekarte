@@ -1,26 +1,59 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8">
   <title>Speisekarte</title>
-  <link rel="stylesheet" href="style.css">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="topbar">
-  <button onclick="setLanguage('de')">DE</button>
-  <button onclick="setLanguage('en')">EN</button>
-  <button onclick="toggleDarkMode()">🌙</button>
-</div>
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <button onclick="setLanguage('de')">DE</button>
+    <button onclick="setLanguage('en')">EN</button>
+    <button onclick="toggleDarkMode()">🌙</button>
+  </div>
 
-<h1 class="header" id="title"></h1>
+  <!-- HERO SECTION -->
+  <div class="hero">
+    <div class="hero-overlay">
+      <h1>Willkommen in der Zur Guten Laune</h1>
+      <p>Genuss • Gemütlichkeit • Tradition</p>
+    </div>
+  </div>
 
-<div class="container">
-  <div id="menu"></div>
-</div>
+  <!-- STICKY NAVIGATION -->
+  <div class="sticky-nav">
+    <a href="#vorspeisen">Vorspeisen</a>
+    <a href="#hauptspeisen">Hauptspeisen</a>
+    <a href="#desserts">Desserts</a>
+    <a href="#getraenke">Getränke</a>
+    <a href="#spirituosen">Schnaps</a>
+  </div>
 
-<script src="script.js"></script>
+  <!-- HEADER -->
+  <h1 class="header" id="title"></h1>
+
+  <!-- MENU -->
+  <div class="container">
+    <div id="menu"></div>
+  </div>
+
+  <!-- FLOATING BUTTON -->
+  <button id="backToTop">↑</button>
+
+  <script src="script.js"></script>
+
 </body>
 </html>

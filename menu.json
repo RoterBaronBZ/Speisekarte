@@ -53,7 +53,7 @@
             "items": [
               {
                 "name": "Hähnchenschnitzel",
-                "description": "mit Pommes, Rohkost und Gemüse",
+                "description": "mit Pommes, Gemüse und Rohkost",
                 "price": 16.8
               },
               {
@@ -78,14 +78,14 @@
             "name": "Vom Schwein",
             "items": [
               {
-                "name": "Schweinekammsteak au four",
+                "name": "Schweinekammsteak o'four",
                 "description": "mit Pommes und Rohkost",
-                "price": 28
+                "price": 18.2
               },
               {
                 "name": "Schweinekammsteak Spreewälder Art",
                 "description": "mit Röster und Rohkost",
-                "price": 28
+                "price": 18.2
               },
               {
                 "name": "Schweineschnitzel (Kamm oder Rücken)",
@@ -95,12 +95,12 @@
               {
                 "name": "Schweinekammsteak Zigeunerart",
                 "description": "mit Pommes und Rohkost",
-                "price": 28
+                "price": 18.2
               },
               {
                 "name": "Schweinekammsteak mit Rahmchampignons",
                 "description": "mit Kroketten und Rohkost",
-                "price": 28
+                "price": 18.2
               },
               {
                 "name": "Kasslerbraten",
@@ -115,7 +115,7 @@
             "items": [
               {
                 "name": "Gebratenes Zanderfilet",
-                "description": "mit Kräuterbutter, Kartoffeln und Gemüse",
+                "description": "mit Kräuterbutter, Kartoffeln, Gemüse und Rohkost",
                 "price": 20.9
               },
               {
@@ -132,7 +132,7 @@
               {
                 "name": "Feuerfleisch",
                 "description": "mit Röstkartoffeln und Rohkost",
-                "price": 16.9
+                "price": 16.2
               },
               {
                 "name": "Bauernfrühstück",
@@ -176,8 +176,8 @@
             "name": "Kindergerichte",
             "items": [
               {
-                "name": "Nudeln",
-                "description": "mit Tomatensauce",
+                "name": "Nudeln mit Tomatensauce",
+                "description": "Wahlweise mit Käse",
                 "price": 4.9
               },
               {
@@ -214,7 +214,7 @@
         "name": "Desserts",
         "subcategories": [
           {
-            "name": "Eisspezialitäten",
+            "name": "Eiskarte",
             "items": [
               {
                 "name": "Vanilleeis",
@@ -233,7 +233,7 @@
               },
               {
                 "name": "Kinder-Eisbecher",
-                "description": "eine Kugel Eis mit Sahne",
+                "description": "mit einer Kugel Eis mit Sahne",
                 "price": 3.2
               }
             ]
@@ -245,12 +245,78 @@
         "name": "Getränke",
         "subcategories": [
           {
+            "name": "Bier vom Fass",
+            "items": [
+              {
+                "name": "Feldschlösschen Pilsner",
+                "description": "0,25l",
+                "price": 3
+              },
+              {
+                "name": "Feldschlösschen Pilsner",
+                "description": "0,4l",
+                "price": 4
+              },
+              {
+                "name": "Schwarzer Steiger",
+                "description": "0,25l",
+                "price": 3
+              },
+              {
+                "name": "Schwarzer Steiger",
+                "description": "0,4l",
+                "price": 4
+              },
+              {
+                "name": "Radler",
+                "description": "0,25l",
+                "price": 3
+              },
+              {
+                "name": "Radler",
+                "description": "0,4l",
+                "price": 4
+              },
+              {
+                "name": "Diesel",
+                "description": "0,25l",
+                "price": 3
+              },
+              {
+                "name": "Diesel",
+                "description": "0,4l",
+                "price": 4
+              },
+              {
+                "name": "Potsdamer",
+                "description": "0,25l",
+                "price": 3
+              },
+              {
+                "name": "Potsdamer",
+                "description": "0,4l",
+                "price": 4
+              }
+            ]
+          },
+          {
             "name": "Alkoholfreie Getränke",
             "items": [
               { "name": "Orangensaft", "description": "0,2l", "price": 2.6 },
               { "name": "Apfelsaft", "description": "0,2l", "price": 2.6 },
               { "name": "Multivitaminsaft", "description": "0,2l", "price": 2.6 },
-              { "name": "Kirschsaft", "description": "0,2l", "price": 2.6 }
+              { "name": "Kirschsaft", "description": "0,2l", "price": 2.6 },
+              { "name": "Bananensaft", "description": "0,2l", "price": 2.6 },
+              { "name": "Apfelsaftschorle", "description": "0,2l", "price": 2.6 },
+              { "name": "Kirschbananensaft", "description": "0,2l", "price": 2.8 },
+              { "name": "Cola", "description": "0,2l", "price": 2.6 },
+              { "name": "Himbeerfassbrause", "description": "0,2l", "price": 2.6 },
+              { "name": "Fanta", "description": "0,2l", "price": 2.6 },
+              { "name": "Sprite", "description": "0,2l", "price": 2.6 },
+              { "name": "Gingerale", "description": "0,2l", "price": 2.6 },
+              { "name": "Tonic", "description": "0,2l", "price": 2.6 },
+              { "name": "Mineralwasser", "description": "0,2l - still, medium oder classic", "price": 2.6 },
+              { "name": "Flasche Mineralwasser", "description": "0,75l", "price": 5.8 }
             ]
           },
 
@@ -258,13 +324,13 @@
             "name": "Sekt",
             "items": [
               {
-                "name": "Lausitzer Zeitgeist halbtrocken",
-                "description": "0,75l",
-                "price": 16.8
+                "name": "Lausitzer Zeitgeist",
+                "description": "trocken oder halbtrocken - 0,1l",
+                "price": 2.7
               },
               {
-                "name": "Lausitzer Zeitgeist trocken",
-                "description": "0,75l",
+                "name": "Lausitzer Zeitgeist",
+                "description": "trocken oder halbtrocken - 0,75l",
                 "price": 16.8
               }
             ]
@@ -274,28 +340,65 @@
             "name": "Weißweine",
             "items": [
               {
-                "name": "Weißer Burgunder trocken",
-                "description": "0,2l",
+                "name": "Weißer Burgunder (Nahe)",
+                "description": "trocken - 0,2l",
                 "price": 6.2
+              },
+              {
+                "name": "Jechtinger (Müller-Thurgau)",
+                "description": "halbtrocken - 0,2l",
+                "price": 6.2
+              },
+              {
+                "name": "Bechtheimer Pilgerpfad (Rheinhessen)",
+                "description": "lieblich - 0,2l",
+                "price": 6.2
+              },
+              {
+                "name": "Chardonnay",
+                "description": "trocken - 0,2l",
+                "price": 6.2
+              },
+              {
+                "name": "Wermut",
+                "description": "0,1l",
+                "price": 4.3
+              },
+              {
+                "name": "Flasche Weißwein",
+                "description": "0,75l",
+                "price": 19.9
               }
             ]
           },
 
           {
             "name": "Rotweine",
-            "items": []
-          },
-
-          {
-            "name": "Bier vom Fass",
             "items": [
               {
-                "name": "Feldschlösschen Pilsner",
-                "description": "0,25l",
-                "price": 3
+                "name": "Dr. Zensen Dornfelder (Rheinhessen)",
+                "description": "trocken, halbtrocken oder lieblich - 0,2l",
+                "price": 6.2
+              },
+              {
+                "name": "Merlot (Venetien)",
+                "description": "trocken - 0,2l",
+                "price": 6.2
+              },
+              {
+                "name": "Flasche Rotwein",
+                "description": "0,75l",
+                "price": 19.9
+              },
+              {
+                "name": "Flasche Merlot",
+                "description": "0,75l",
+                "price": 20.9
               }
             ]
           },
+
+          
 
           {
             "name": "Flaschenbiere",
@@ -304,17 +407,52 @@
                 "name": "Radeberger Pils",
                 "description": "0,5l",
                 "price": 4.5
+              },
+              {
+                "name": "Erdinger Hefeweizen",
+                "description": "0,5l",
+                "price": 4.5
+              },
+              {
+                "name": "Erdinger Hefeweizen Dunkel",
+                "description": "0,5l",
+                "price": 4.5
+              },
+              {
+                "name": "Erdinger Hefeweizen Alkoholfrei",
+                "description": "0,5l",
+                "price": 4.5
+              },
+              {
+                "name": "Feldschlößchen Alkoholfrei",
+                "description": "0,5l",
+                "price": 4.5
               }
             ]
           },
 
           {
-            "name": "Spirituosen (4cl)",
+            "name": "Spirituosen",
             "items": [
               {
                 "name": "Jägermeister",
                 "description": "",
                 "price": 2.8
+              },
+              {
+                "name": "Oberlausitzer Bitter",
+                "description": "",
+                "price": 2.8
+              },
+              {
+                "name": "Wilthener Gebirgskräuter",
+                "description": "",
+                "price": 2.5
+              },
+              {
+                "name": "Ramazotti",
+                "description": "",
+                "price": 4.3
               }
             ]
           },
@@ -324,6 +462,11 @@
             "items": [
               {
                 "name": "Espresso",
+                "description": "",
+                "price": 2.4
+              },
+              {
+                "name": "Doppelter Espresso",
                 "description": "",
                 "price": 2.4
               }
