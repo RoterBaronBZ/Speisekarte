@@ -6,15 +6,20 @@
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
 
 <div class="topbar">
   <button onclick="setLanguage('de')">DE</button>
   <button onclick="setLanguage('en')">EN</button>
+  <button onclick="toggleDarkMode()">🌙</button>
 </div>
 
-<h1 id="title"></h1>
-<div id="menu"></div>
+<h1 class="header" id="title"></h1>
+
+<div class="container">
+  <div id="menu"></div>
+</div>
 
 <script src="script.js"></script>
 </body>
