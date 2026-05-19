@@ -24,7 +24,6 @@ body {
   height: 340px;
 
   background-image: url('./images/banner.jpg');
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -47,11 +46,10 @@ body {
   width: 100%;
   height: 100%;
 
-  background:
-    linear-gradient(
-      rgba(0,0,0,0.45),
-      rgba(0,0,0,0.35)
-    );
+  background: linear-gradient(
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.35)
+  );
 
   display: flex;
   flex-direction: column;
@@ -135,7 +133,6 @@ button:hover {
   margin-top: 15px;
 
   background: rgba(255,255,255,0.92);
-
   backdrop-filter: blur(10px);
 
   border-radius: 14px;
@@ -163,7 +160,6 @@ button:hover {
 .sticky-nav a:hover {
   background: #d4af37;
   color: white;
-
   transform: translateY(-2px);
 }
 
@@ -279,7 +275,6 @@ button:hover {
 
 .item-desc {
   font-size: 13px;
-
   color: #666;
 
   margin-top: 4px;
@@ -292,7 +287,6 @@ button:hover {
 
 .item-price {
   font-weight: bold;
-
   color: #d4af37;
 
   white-space: nowrap;
@@ -340,11 +334,10 @@ button:hover {
 
 #backToTop:hover {
   transform: translateY(-3px);
-
   background: #d4af37;
 }
 
-/* MOBILE */
+/* MOBILE OPTIMIZED */
 
 @media (max-width: 480px) {
 
@@ -353,7 +346,10 @@ button:hover {
   }
 
   .hero {
-    height: 240px;
+    height: 180px;
+
+    /* WICHTIG: Fix für schlechtes Cropping */
+    background-position: 50% 30%;
   }
 
   .hero-overlay h1 {
@@ -407,11 +403,6 @@ button:hover {
     font-size: 12px;
     padding: 8px 12px;
   }
-  .hero {
-  height: 200px;
-
-  background-position: center;
-}
 }
 
 /* DARK MODE */
