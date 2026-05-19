@@ -299,6 +299,38 @@
               }
             ]
           },
+
+          {
+            "name": "Flaschenbiere",
+            "items": [
+              {
+                "name": "Radeberger Pils",
+                "description": "0,5l",
+                "price": 4.5
+              },
+              {
+                "name": "Erdinger Hefeweizen",
+                "description": "0,5l",
+                "price": 4.5
+              },
+              {
+                "name": "Erdinger Hefeweizen Dunkel",
+                "description": "0,5l",
+                "price": 4.5
+              },
+              {
+                "name": "Erdinger Hefeweizen Alkoholfrei",
+                "description": "0,5l",
+                "price": 4.5
+              },
+              {
+                "name": "Feldschlößchen Alkoholfrei",
+                "description": "0,5l",
+                "price": 4.5
+              }
+            ]
+          },
+
           {
             "name": "Alkoholfreie Getränke",
             "items": [
@@ -398,35 +430,23 @@
             ]
           },
 
-          
-
           {
-            "name": "Flaschenbiere",
+            "name": "Cocktails",
             "items": [
               {
-                "name": "Radeberger Pils",
-                "description": "0,5l",
-                "price": 4.5
+                "name": "Aperol Spritz",
+                "description": "",
+                "price": 6.5
               },
               {
-                "name": "Erdinger Hefeweizen",
-                "description": "0,5l",
-                "price": 4.5
+                "name": "Aperol Spritz Alkoholfrei",
+                "description": "",
+                "price": 6.5
               },
               {
-                "name": "Erdinger Hefeweizen Dunkel",
-                "description": "0,5l",
-                "price": 4.5
-              },
-              {
-                "name": "Erdinger Hefeweizen Alkoholfrei",
-                "description": "0,5l",
-                "price": 4.5
-              },
-              {
-                "name": "Feldschlößchen Alkoholfrei",
-                "description": "0,5l",
-                "price": 4.5
+                "name": "Lillet Wildberry",
+                "description": "",
+                "price": 6.5
               }
             ]
           },
@@ -453,6 +473,86 @@
                 "name": "Ramazotti",
                 "description": "",
                 "price": 4.3
+              },
+              {
+                "name": "Underberg",
+                "description": "2cl",
+                "price": 2.3
+              },
+              {
+                "name": "Kümmerling",
+                "description": "2cl",
+                "price": 2.3
+              },
+              {
+                "name": "Becherovka",
+                "description": "",
+                "price": 2.8
+              },
+              {
+                "name": "Feiner Alter Wilthener",
+                "description": "",
+                "price": 4.2
+              },
+              {
+                "name": "Jim Beam",
+                "description": "",
+                "price": 3.2
+              },
+              {
+                "name": "Hardenberg",
+                "description": "",
+                "price": 2.8
+              },
+              {
+                "name": "Nordhäuser Doppelkorn",
+                "description": "",
+                "price": 2.8
+              },
+              {
+                "name": "Wodka",
+                "description": "",
+                "price": 2.8
+              },
+              {
+                "name": "Obstler",
+                "description": "",
+                "price": 2.8
+              },
+              {
+                "name": "Malteser",
+                "description": "",
+                "price": 2.8
+              },
+              {
+                "name": "Grappa",
+                "description": "",
+                "price": 2.8
+              },
+              {
+                "name": "Kirschlikör",
+                "description": "",
+                "price": 2.5
+              },
+              {
+                "name": "Pfeffi",
+                "description": "",
+                "price": 2.5
+              },
+              {
+                "name": "Saurer Apfel",
+                "description": "",
+                "price": 2.5
+              },
+              {
+                "name": "Dooleys",
+                "description": "",
+                "price": 2.8
+              },
+              {
+                "name": "Eierlikör",
+                "description": "",
+                "price": 2.5
               }
             ]
           },
@@ -468,7 +568,47 @@
               {
                 "name": "Doppelter Espresso",
                 "description": "",
-                "price": 2.4
+                "price": 3.9
+              },
+              {
+                "name": "Tasse Kaffee",
+                "description": "",
+                "price": 2.6
+              },
+              {
+                "name": "Pott Kaffee",
+                "description": "",
+                "price": 3.9
+              },
+              {
+                "name": "Heiße Schokolade",
+                "description": "Mit Sahne",
+                "price": 3.2
+              },
+              {
+                "name": "Cappuchino",
+                "description": "Mit Sahne",
+                "price": 3.2
+              },
+              {
+                "name": "heiße Zitrone",
+                "description": "",
+                "price": 2.6
+              },
+              {
+                "name": "Glas Tee",
+                "description": "",
+                "price": 2.6
+              },
+              {
+                "name": "Grog",
+                "description": "alkoholisches Heißgetränk",
+                "price": 3.9
+              },
+              {
+                "name": "Jagertee",
+                "description": "alkoholisches Heißgetränk",
+                "price": 3.9
               }
             ]
           }
@@ -478,27 +618,710 @@
   },
 
   "en": {
-    "title": "Menu",
-    "categories": [
-      {
-        "name": "Starters",
-        "items": [
-          {
-            "name": "Tomato Soup",
-            "price": 5
-          }
-        ]
-      },
+  "title": "Menu",
 
-      {
-        "name": "Main Dishes",
-        "items": [
-          {
-            "name": "Pizza Margherita",
-            "price": 9
-          }
-        ]
-      }
-    ]
-  }
+  "heroTitle": "Welcome to Zur Guten Laune",
+  "heroSubtitle": "Enjoyment • Comfort • Tradition",
+
+  "categories": [
+
+    {
+      "name": "Starters",
+      "subcategories": [
+        {
+          "name": "Soups & Small Dishes",
+          "items": [
+            {
+              "name": "Egg Drop Soup",
+              "description": "",
+              "price": 4.7
+            },
+            {
+              "name": "Solyanka with Toast",
+              "description": "",
+              "price": 5.1
+            },
+            {
+              "name": "Chicken Ragout with Toast",
+              "description": "",
+              "price": 6.6
+            },
+            {
+              "name": "Small Salad Plate",
+              "description": "",
+              "price": 6.1
+            },
+            {
+              "name": "Baked Camembert with Cranberries and Toast",
+              "description": "",
+              "price": 8.2
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "name": "Main Dishes",
+      "subcategories": [
+
+        {
+          "name": "Beef",
+          "items": [
+            {
+              "name": "Beef Tongue",
+              "description": "with potatoes and vegetables",
+              "price": 19.2
+            },
+            {
+              "name": "Homemade Beef Roulade",
+              "description": "with potatoes and red cabbage",
+              "price": 20.4
+            }
+          ]
+        },
+
+        {
+          "name": "Game",
+          "items": [
+            {
+              "name": "Roast Venison",
+              "description": "with dumplings and red cabbage",
+              "price": 21.3
+            }
+          ]
+        },
+
+        {
+          "name": "Poultry",
+          "items": [
+            {
+              "name": "Chicken Schnitzel",
+              "description": "with fries, vegetables and salad",
+              "price": 16.8
+            },
+            {
+              "name": "Baked Chicken Fillet",
+              "description": "with pineapple, fries and salad",
+              "price": 16.7
+            },
+            {
+              "name": "Fried Chicken Fillet",
+              "description": "with curry cream sauce, wild rice and salad",
+              "price": 17.6
+            },
+            {
+              "name": "Baked Chicken Fillet",
+              "description": "with tomato, potato wedges and salad",
+              "price": 17.7
+            }
+          ]
+        },
+
+        {
+          "name": "Pork",
+          "items": [
+            {
+              "name": "Pork Neck Steak o'four",
+              "description": "with fries and salad",
+              "price": 18.2
+            },
+            {
+              "name": "Pork Neck Steak Spreewald Style",
+              "description": "with hash browns and salad",
+              "price": 18.2
+            },
+            {
+              "name": "Pork Schnitzel (neck or loin)",
+              "description": "with potatoes and vegetables",
+              "price": 16.9
+            },
+            {
+              "name": "Pork Neck Steak Gypsy Style",
+              "description": "with fries and salad",
+              "price": 18.2
+            },
+            {
+              "name": "Pork Neck Steak with Cream Mushrooms",
+              "description": "with croquettes and salad",
+              "price": 18.2
+            },
+            {
+              "name": "Roast Kassler",
+              "description": "with dumplings and sauerkraut",
+              "price": 16.9
+            }
+          ]
+        },
+
+        {
+          "name": "Fish Dishes",
+          "items": [
+            {
+              "name": "Fried Pike-Perch Fillet",
+              "description": "with herb butter, potatoes, vegetables and salad",
+              "price": 20.9
+            },
+            {
+              "name": "Fried Pickled Herring",
+              "description": "with fried potatoes and salad",
+              "price": 14.9
+            }
+          ]
+        },
+
+        {
+          "name": "Other Dishes",
+          "items": [
+            {
+              "name": "Spicy Pork Strips",
+              "description": "with fried potatoes and salad",
+              "price": 16.2
+            },
+            {
+              "name": "Farmer’s Breakfast",
+              "description": "",
+              "price": 14.9
+            },
+            {
+              "name": "Omelette with Chicken Ragout",
+              "description": "",
+              "price": 14.2
+            },
+            {
+              "name": "Omelette with Cream Mushrooms",
+              "description": "",
+              "price": 13.9
+            },
+            {
+              "name": "Small Cold Roast Sandwich",
+              "description": "with horseradish",
+              "price": 8.9
+            },
+            {
+              "name": "Grilled Pork Knuckle",
+              "description": "with sauerkraut and bread",
+              "price": 17.9
+            },
+            {
+              "name": "Vegetable Plate",
+              "description": "with butter and potatoes",
+              "price": 12.9
+            }
+          ]
+        }
+
+      ]
+    },
+
+    {
+      "name": "For Our Little Guests",
+      "subcategories": [
+        {
+          "name": "Kids Meals",
+          "items": [
+            {
+              "name": "Pasta with Tomato Sauce",
+              "description": "optional with cheese",
+              "price": 4.9
+            },
+            {
+              "name": "French Fries with Ketchup & Mayo",
+              "description": "",
+              "price": 3.2
+            },
+            {
+              "name": "Chicken Schnitzel",
+              "description": "with fries and vegetables",
+              "price": 6.2
+            },
+            {
+              "name": "Fish Fingers",
+              "description": "with potatoes and red cabbage",
+              "price": 4.9
+            },
+            {
+              "name": "Potato Pancakes",
+              "description": "with apple sauce",
+              "price": 4.8
+            },
+            {
+              "name": "Yeast Dumplings",
+              "description": "with apple sauce",
+              "price": 4.8
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "name": "Desserts",
+      "subcategories": [
+        {
+          "name": "Ice Cream Specialties",
+          "items": [
+            {
+              "name": "Vanilla Ice Cream",
+              "description": "with hot raspberries and whipped cream",
+              "price": 7.8
+            },
+            {
+              "name": "Chocolate Sundae",
+              "description": "with egg liqueur and whipped cream",
+              "price": 7.6
+            },
+            {
+              "name": "Vanilla Ice Cream",
+              "description": "with apple sauce and whipped cream",
+              "price": 7.3
+            },
+            {
+              "name": "Kids Ice Cream Cup",
+              "description": "one scoop of ice cream with whipped cream",
+              "price": 3.2
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "name": "Drinks",
+      "subcategories": [
+
+        {
+          "name": "Draft Beer",
+          "items": [
+            {
+              "name": "Feldschlösschen Pilsner",
+              "description": "0.25l",
+              "price": 3
+            },
+            {
+              "name": "Feldschlösschen Pilsner",
+              "description": "0.4l",
+              "price": 4
+            },
+            {
+              "name": "Black Miner Beer",
+              "description": "0.25l",
+              "price": 3
+            },
+            {
+              "name": "Black Miner Beer",
+              "description": "0.4l",
+              "price": 4
+            },
+            {
+              "name": "Radler",
+              "description": "0.25l",
+              "price": 3
+            },
+            {
+              "name": "Radler",
+              "description": "0.4l",
+              "price": 4
+            },
+            {
+              "name": "Diesel Beer",
+              "description": "0.25l",
+              "price": 3
+            },
+            {
+              "name": "Diesel Beer",
+              "description": "0.4l",
+              "price": 4
+            },
+            {
+              "name": "Potsdamer",
+              "description": "0.25l",
+              "price": 3
+            },
+            {
+              "name": "Potsdamer",
+              "description": "0.4l",
+              "price": 4
+            }
+          ]
+        },
+
+        {
+          "name": "Bottled Beer",
+          "items": [
+            {
+              "name": "Radeberger Pils",
+              "description": "0.5l",
+              "price": 4.5
+            },
+            {
+              "name": "Erdinger Wheat Beer",
+              "description": "0.5l",
+              "price": 4.5
+            },
+            {
+              "name": "Erdinger Dark Wheat Beer",
+              "description": "0.5l",
+              "price": 4.5
+            },
+            {
+              "name": "Erdinger Alcohol-Free Wheat Beer",
+              "description": "0.5l",
+              "price": 4.5
+            },
+            {
+              "name": "Feldschlösschen Alcohol-Free",
+              "description": "0.5l",
+              "price": 4.5
+            }
+          ]
+        },
+
+        {
+          "name": "Soft Drinks",
+          "items": [
+            {
+              "name": "Orange Juice",
+              "description": "0.2l",
+              "price": 2.6
+            },
+            {
+              "name": "Apple Juice",
+              "description": "0.2l",
+              "price": 2.6
+            },
+            {
+              "name": "Multivitamin Juice",
+              "description": "0.2l",
+              "price": 2.6
+            },
+            {
+              "name": "Cherry Juice",
+              "description": "0.2l",
+              "price": 2.6
+            },
+            {
+              "name": "Banana Juice",
+              "description": "0.2l",
+              "price": 2.6
+            },
+            {
+              "name": "Apple Juice Spritzer",
+              "description": "0.2l",
+              "price": 2.6
+            },
+            {
+              "name": "Cherry Banana Juice",
+              "description": "0.2l",
+              "price": 2.8
+            },
+            {
+              "name": "Cola",
+              "description": "0.2l",
+              "price": 2.6
+            },
+            {
+              "name": "Raspberry Soda",
+              "description": "0.2l",
+              "price": 2.6
+            },
+            {
+              "name": "Fanta",
+              "description": "0.2l",
+              "price": 2.6
+            },
+            {
+              "name": "Sprite",
+              "description": "0.2l",
+              "price": 2.6
+            },
+            {
+              "name": "Ginger Ale",
+              "description": "0.2l",
+              "price": 2.6
+            },
+            {
+              "name": "Tonic Water",
+              "description": "0.2l",
+              "price": 2.6
+            },
+            {
+              "name": "Mineral Water",
+              "description": "0.2l - still, medium or sparkling",
+              "price": 2.6
+            },
+            {
+              "name": "Bottle of Mineral Water",
+              "description": "0.75l",
+              "price": 5.8
+            }
+          ]
+        },
+
+        {
+          "name": "Sparkling Wine",
+          "items": [
+            {
+              "name": "Lausitzer Zeitgeist",
+              "description": "dry or semi-dry - 0.1l",
+              "price": 2.7
+            },
+            {
+              "name": "Lausitzer Zeitgeist",
+              "description": "dry or semi-dry - 0.75l",
+              "price": 16.8
+            }
+          ]
+        },
+
+        {
+          "name": "White Wines",
+          "items": [
+            {
+              "name": "Pinot Blanc (Nahe)",
+              "description": "dry - 0.2l",
+              "price": 6.2
+            },
+            {
+              "name": "Jechtinger (Müller-Thurgau)",
+              "description": "semi-dry - 0.2l",
+              "price": 6.2
+            },
+            {
+              "name": "Bechtheimer Pilgerpfad (Rheinhessen)",
+              "description": "sweet - 0.2l",
+              "price": 6.2
+            },
+            {
+              "name": "Chardonnay",
+              "description": "dry - 0.2l",
+              "price": 6.2
+            },
+            {
+              "name": "Vermouth",
+              "description": "0.1l",
+              "price": 4.3
+            },
+            {
+              "name": "Bottle of White Wine",
+              "description": "0.75l",
+              "price": 19.9
+            }
+          ]
+        },
+
+        {
+          "name": "Red Wines",
+          "items": [
+            {
+              "name": "Dr. Zensen Dornfelder (Rheinhessen)",
+              "description": "dry, semi-dry or sweet - 0.2l",
+              "price": 6.2
+            },
+            {
+              "name": "Merlot (Veneto)",
+              "description": "dry - 0.2l",
+              "price": 6.2
+            },
+            {
+              "name": "Bottle of Red Wine",
+              "description": "0.75l",
+              "price": 19.9
+            },
+            {
+              "name": "Bottle of Merlot",
+              "description": "0.75l",
+              "price": 20.9
+            }
+          ]
+        },
+
+        {
+          "name": "Cocktails",
+          "items": [
+            {
+              "name": "Aperol Spritz",
+              "description": "",
+              "price": 6.5
+            },
+            {
+              "name": "Alcohol-Free Aperol Spritz",
+              "description": "",
+              "price": 6.5
+            },
+            {
+              "name": "Lillet Wildberry",
+              "description": "",
+              "price": 6.5
+            }
+          ]
+        },
+
+        {
+          "name": "Spirits",
+          "items": [
+            {
+              "name": "Jägermeister",
+              "description": "",
+              "price": 2.8
+            },
+            {
+              "name": "Oberlausitz Bitter",
+              "description": "",
+              "price": 2.8
+            },
+            {
+              "name": "Wilthener Herbal Liqueur",
+              "description": "",
+              "price": 2.5
+            },
+            {
+              "name": "Ramazzotti",
+              "description": "",
+              "price": 4.3
+            },
+            {
+              "name": "Underberg",
+              "description": "2cl",
+              "price": 2.3
+            },
+            {
+              "name": "Kümmerling",
+              "description": "2cl",
+              "price": 2.3
+            },
+            {
+              "name": "Becherovka",
+              "description": "",
+              "price": 2.8
+            },
+            {
+              "name": "Aged Wilthener Brandy",
+              "description": "",
+              "price": 4.2
+            },
+            {
+              "name": "Jim Beam",
+              "description": "",
+              "price": 3.2
+            },
+            {
+              "name": "Hardenberg Korn",
+              "description": "",
+              "price": 2.8
+            },
+            {
+              "name": "Nordhäuser Double Korn",
+              "description": "",
+              "price": 2.8
+            },
+            {
+              "name": "Vodka",
+              "description": "",
+              "price": 2.8
+            },
+            {
+              "name": "Fruit Brandy",
+              "description": "",
+              "price": 2.8
+            },
+            {
+              "name": "Malteser Aquavit",
+              "description": "",
+              "price": 2.8
+            },
+            {
+              "name": "Grappa",
+              "description": "",
+              "price": 2.8
+            },
+            {
+              "name": "Cherry Liqueur",
+              "description": "",
+              "price": 2.5
+            },
+            {
+              "name": "Peppermint Liqueur",
+              "description": "",
+              "price": 2.5
+            },
+            {
+              "name": "Sour Apple",
+              "description": "",
+              "price": 2.5
+            },
+            {
+              "name": "Dooleys",
+              "description": "",
+              "price": 2.8
+            },
+            {
+              "name": "Egg Liqueur",
+              "description": "",
+              "price": 2.5
+            }
+          ]
+        },
+
+        {
+          "name": "Hot Drinks",
+          "items": [
+            {
+              "name": "Espresso",
+              "description": "",
+              "price": 2.4
+            },
+            {
+              "name": "Double Espresso",
+              "description": "",
+              "price": 3.4
+            },
+            {
+              "name": "Cup of Coffee",
+              "description": "",
+              "price": 2.6
+            },
+            {
+              "name": "Large Coffee",
+              "description": "",
+              "price": 3.9
+            },
+            {
+              "name": "Hot Chocolate",
+              "description": "with whipped cream",
+              "price": 3.2
+            },
+            {
+              "name": "Cappuccino",
+              "description": "with whipped cream",
+              "price": 3.2
+            },
+            {
+              "name": "Hot Lemon",
+              "description": "",
+              "price": 2.6
+            },
+            {
+              "name": "Tea",
+              "description": "",
+              "price": 2.6
+            },
+            {
+              "name": "Grog",
+              "description": "alcoholic hot drink",
+              "price": 3.9
+            },
+            {
+              "name": "Hunter’s Tea",
+              "description": "alcoholic hot drink",
+              "price": 3.9
+            }
+          ]
+        }
+
+      ]
+    }
+
+  ]
+}
 }
